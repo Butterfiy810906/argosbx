@@ -12,28 +12,28 @@ jobs:
     runs-on: ubuntu-latest
     env:
       # 必填！每个账号邮箱空一格
-      CF_USERNAMES: "miss@tencenl.dpdns.org" 
+      CF_USERNAMES: "miss@tencenl.dpdns.org miss@tencenl.dpdns.org" 
 
       # 必填！每个账号对应密码空一格
-      CF_PASSWORDS: "jH81074991+"
+      CF_PASSWORDS: "jH81074991+ jH81074991+"
 
       # 必填！每个账号对应地区空一格
-      REGIONS: "US" 
+      REGIONS: "US SG" 
       
       # 必填！每个账号对应UUID空一格
-      UUIDS: "1d649a90-cd90-406a-891a-167e24ae88ae" 
+      UUIDS: "1d649a90-cd90-406a-891a-167e24ae88ae 00afe20b-970f-4f3b-8b9c-7c282e1993b2" 
 
       # 选填！每个账号对应名称空一格，不填则每个实例自动生成，多个账号中有个别账号自动生成填no
-      APP_NAMES: "miss"
+      APP_NAMES: "misszhao trial"
 
       # 选填！Argo固定/临时隧道端口，每个账号对应端口空一格，不填则每个实例不启用argo，多个账号中有个别账号不启用填no
-      VMPTS: "8001"
+      VMPTS: "8001 no"
 
       # 选填！Argo固定隧道域名，每个账号对应域名空一格，不填则每个实例启用argo临时隧道，多个账号中有个别账号不启用填no
-      AGNS: "north.icac.indevs.in"
+      AGNS: "north.icac.indevs.in no"
 
       # 选填！Argo固定隧道token，每个账号对应token空一格，不填则每个实例启用argo临时隧道，多个账号中有个别账号不启用填no
-      AGKS: "eyJhIjoiOTY4N2E1NzUxZjlhOGU2ZGE3MzIxNjJmMzQ5YWRjYzgiLCJ0IjoiOTU3ZWI5ZWUtZDJhZS00ZTZkLTkxZDQtYmY4MTk5OGQ4NjI5IiwicyI6Ik56RXlPV1ZrTVRRdE1ETmpaaTAwWkRZeExXSXlZakl0WWpjeVlqWXpZalE1T1RZNSJ9"
+      AGKS: "eyJhIjoiOTY4N2E1NzUxZjlhOGU2ZGE3MzIxNjJmMzQ5YWRjYzgiLCJ0IjoiOTU3ZWI5ZWUtZDJhZS00ZTZkLTkxZDQtYmY4MTk5OGQ4NjI5IiwicyI6Ik56RXlPV1ZrTVRRdE1ETmpaaTAwWkRZeExXSXlZakl0WWpjeVlqWXpZalE1T1RZNSJ9 no"
 
       # 优先独立执行！删除账户内的APP名称，多个APP空一格，执行后务必还原留空状态：DELAPP: "" 
       DELAPP: "" 
